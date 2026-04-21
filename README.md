@@ -102,6 +102,8 @@ Open `http://127.0.0.1:3000`. **Use 127.0.0.1, not localhost** — your Spotify 
 For persisting onboarding preferences across sessions, create a Supabase project and run `supabase/schema.sql` in the SQL editor. Add the Supabase env vars to `.env.local`.
 
 ## Project Structure
+
+```
 src/
 ├── app/
 │   ├── api/
@@ -123,6 +125,8 @@ src/
 │   ├── supabase.ts                # Optional persistence
 │   └── mockData.ts                # Fallback for UI dev
 └── types/                         # Type definitions
+```
+
 ## Development Notes
 
 - This app was built primarily with Claude (Anthropic) as a learning exercise in shipping a real Next.js app with multiple third-party APIs. Most of the debugging time went into discovering and working around Spotify's February 2026 dev mode restrictions, which weren't well-documented when this was built.
