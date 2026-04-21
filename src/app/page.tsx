@@ -1,4 +1,3 @@
-// src/app/page.tsx
 "use client";
 import { signIn, useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";

@@ -1,4 +1,3 @@
-// src/lib/supabase.ts
 
 function getClient(key: string) {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;

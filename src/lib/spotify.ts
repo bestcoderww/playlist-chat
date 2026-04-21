@@ -1,4 +1,3 @@
-// src/lib/spotify.ts
 import type { PlaylistFilter, Track } from "@/types";
 
 const BASE = "https://api.spotify.com/v1";
@@ -26,8 +25,6 @@ async function spotifyPost(url: string, body: any, accessToken: string) {
   }
   try { return JSON.parse(text); } catch { return {}; }
 }
-
-
 
 // Tracks which songs we've already shown for each artist this session
 // (resets on server restart — good enough for now)
@@ -469,7 +466,6 @@ export async function savePlaylistToSpotify(
   console.log("[save] done");
   return "https://open.spotify.com/playlist/" + playlist.id;
 }
-
 
 export async function findSpecificSongDirect(
   title: string,

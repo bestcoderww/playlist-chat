@@ -1,4 +1,3 @@
-// src/app/onboarding/page.tsx
 "use client";
 import { useState } from "react";
 import { useSession } from "next-auth/react";

@@ -1,4 +1,3 @@
-// src/lib/authOptions.ts
 import type { AuthOptions } from "next-auth";
 import SpotifyProvider from "next-auth/providers/spotify";
 

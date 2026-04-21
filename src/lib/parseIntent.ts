@@ -1,4 +1,3 @@
-// src/lib/parseIntent.ts
 import type { PlaylistFilter } from "@/types";
 
 const SYSTEM_PROMPT = `You are a music understanding model. Your job is to interpret natural conversational language about music and convert it into a structured filter.
@@ -107,9 +106,7 @@ function fallbackFilter(userInput: string): PlaylistFilter {
   };
 }
 
-
 // Fast-path for common patterns — skips openai entirely
-// We only fast-path patterns we can actually handle well in dev mode.
 // Abstract mood adjectives (darker, warmer) get sent to openai because they need interpretation.
 function tryFastPath(
   userInput: string,

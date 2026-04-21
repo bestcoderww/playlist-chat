@@ -1,4 +1,3 @@
-// src/app/builder/page.tsx
 "use client";
 import { useEffect, useState } from "react";
 import { useSession, signOut } from "next-auth/react";

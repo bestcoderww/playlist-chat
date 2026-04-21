@@ -1,4 +1,3 @@
-// src/components/ui/Spinner.tsx
 export function Spinner({ size = 16 }: { size?: number }) {
   return (
     <svg

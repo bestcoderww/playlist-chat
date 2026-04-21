@@ -1,4 +1,3 @@
-// src/components/ui/PlaylistPanel.tsx
 "use client";
 import { useState } from "react";
 import { TrackCard, TrackCardSkeleton } from "./TrackCard";

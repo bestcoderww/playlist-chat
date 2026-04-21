@@ -1,11 +1,9 @@
-// src/hooks/usePlaylist.ts
 "use client";
 import { useSession } from "next-auth/react";
 import toast from "react-hot-toast";
 import { usePlaylistStore } from "@/lib/store";
 import { MOCK_TRACKS, MOCK_FILTER } from "@/lib/mockData";
 import type { Track } from "@/types";
-
 
 // Detect if a refinement is purely additive (just adding songs, no other changes)
 function isAdditiveOnly(prevFilter: any, newFilter: any): boolean {

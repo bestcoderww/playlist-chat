@@ -1,4 +1,3 @@
-// src/components/ui/ChatPanel.tsx
 "use client";
 import { useState, useRef, useEffect } from "react";
 import type { ChatMessage, PlaylistFilter } from "@/types";
